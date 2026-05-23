@@ -12,7 +12,7 @@ console.log(`🤖 AI Provider active: ${provider.toUpperCase()}`);
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const geminiModel = genAI.getGenerativeModel({
-  model: 'gemini-1.5-flash',
+  model: 'gemini-2.5-flash',
   systemInstruction: UMRAH_KNOWLEDGE,
   generationConfig: {
     maxOutputTokens: 1024,
